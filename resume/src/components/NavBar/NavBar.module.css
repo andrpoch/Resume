@@ -11,34 +11,43 @@
    flex-direction: column;
    justify-content: space-between;
 }
-.navigation{
+.nav{
    clear: both;
 }
-.navigationLink{
+
+.link{
    display: flex;
    align-items: center;
-   color: white;
-}
-.navigationLink:hover,
-.navigationLionk:focus{
- color: white;
-}
-.text{
    color: black;
    padding: 15px 0;
    font-family: 'Poppins';
    font-weight: 500;
    font-size: 20px;
    line-height: 1.5;
-   margin-right: 10px;
    transition: all 350ms ease;
+   border-bottom: 2px solid rgba(0, 0, 0, 0.071);
 }
-.text:hover,
-.text:focus{
-color: white;
+.link svg {
+   margin-left: 10px;
+   transition: transform 500ms ease;
 }
-/* .socialWrapper{
-} */
+.link:focus svg,
+.link:hover svg {
+   transform: rotate(1turn);
+}
+
+.link:last-child{
+border: none;
+}
+.link:hover:last-child,
+.link:focus:last-child{
+   border: none;
+}
+.link:hover,
+.link:focus{
+   color: white;
+   border-bottom: 2px solid rgba(254, 254, 254, 0.352);
+}
 .socialList{
    display: flex;
    justify-content: space-evenly;
