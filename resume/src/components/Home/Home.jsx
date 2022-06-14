@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Home.module.css';
-import Container from '../Container/Container'
+import Container from '../Container/Container';
+
 export default function Home() {
    return (
          <Container>

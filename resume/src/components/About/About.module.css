@@ -1,0 +1,86 @@
+.about{
+    padding-top: 140px;
+}
+.mainText{
+font-family: 'Poppins';
+font-weight: 500;
+text-transform: uppercase;
+margin-bottom: 4px;
+color: grey;
+}
+.mainName{
+font-size: 30px;
+font-weight: 800;
+}
+.aboutInner{
+    padding-top: 100px;
+    display: flex;
+
+}
+.left{
+width: 35%;
+}
+.image{
+   width: 350px;
+   height: 350px;
+background-image: url(../../assets/images/meHomeImg.jpg);
+ background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg{
+   width: 340px;
+   height: 340px;
+   border: 10px solid black;
+   position: absolute;
+   top: 320px;
+   left: 390px;
+}
+
+.right{
+width: 65%;
+margin-left: 70px;
+}
+.aboutTitle{
+margin-bottom: 30px;
+display: flex;
+}
+.aboutName{
+display: flex;
+justify-content: center;
+color: black;
+}
+.textEffect::before {
+content: "Web Developer";
+animation: animate infinite 5s;
+padding-left: 10px;
+color: grey;
+}
+  
+        @keyframes animate {
+  
+            0% {
+                content: "Web Developer";
+            }
+  
+            50% {
+                content: "Front-End Developer";
+            }
+  
+            75% {
+                content: "Full Stack developer";
+            }
+        }
+.aboutMe span {
+color: grey;
+font-style: italic;
+font-weight: 500;
+}
+.aboutMeText{
+font-family: mulish;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 400;
+}
