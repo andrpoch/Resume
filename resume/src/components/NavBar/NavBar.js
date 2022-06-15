@@ -27,8 +27,8 @@ export default function NavBar() {
                About
                <AiOutlineInfoCircle style={{ width: "25px", height: "25px" }} />
             </NavLink>
-            <NavLink to='/services' className={s.link}    >
-               Services
+            <NavLink to='/benefits' className={s.link}    >
+               Benefits
                <BsListStars style={{ width: "25px", height: "25px" }} />
             </NavLink>
             <NavLink to='/portfolio' className={s.link}  >

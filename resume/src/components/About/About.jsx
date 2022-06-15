@@ -25,46 +25,50 @@ export default function About() {
                </div>
                <div className={s.right}>
                   <div className={s.aboutTitle}>
-                     <h3 className={s.aboutName}>I'm Andrew Pochapskyi and
-                     <span className={s.textEffect}></span></h3>
+    <h3 className={s.aboutName}>I'm Andrew Pochapskyi and </h3>
+    <span className={s.type}>
+  <span>
+    <span> Web Developer</span>
+    <span> Front-End Developer</span>
+    <span> Full Stack developer</span>
+  </span>
+</span>
                   </div>
-                  <div className={s.aboutMe}>
-                     <p className={s.aboutMeText}>Photographer
-Hi! My name is <span>Andrew Pochapskyi</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
+         <div className={s.aboutMe}>
+             <p className={s.aboutMeText}>
+          Hi! My name is <span>Andrew Pochapskyi</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
                   </div>
-                  <div className={s.aboutContact}>
-                     <ul className={s.aboutLisu}>
-                        <li className={s.aboutItem}>
-                           <FaBirthdayCake />
+                     <ul className={s.list}>
+                        <li className={s.item}>
+                           <FaBirthdayCake style={{ color: 'grey'}} />
                            <p>
-                              Birthday: 30.11.2001</p></li>
-                          <li className={s.aboutItem}>
-                           <FaRegCalendarAlt />
+                              Birthday: </p> 30.11.2001</li>
+                          <li className={s.item}>
+                           <FaRegCalendarAlt style={{ color: 'grey'}} />
                            <p>
-                             Age: 20</p></li>
-                          <li className={s.aboutItem}>
-                           <FaSearchLocation />
+                             Age: </p>20</li>
+                          <li className={s.item}>
+                           <FaSearchLocation style={{ color: 'grey'}} />
                            <p>
-                             Location: <a href='https://goo.gl/maps/8Kx1XYZW8k4X3sqd9'>Ukraine,Vinnytsia</a></p></li>
-                          <li className={s.aboutItem}>
-                           <FaGamepad />
+                             Location:</p> <a href='https://goo.gl/maps/8Kx1XYZW8k4X3sqd9'>Ukraine,Vinnytsia</a></li>
+                          <li className={s.item}>
+                           <FaGamepad style={{ color: 'grey'}} />
                            <p>
-                       Interests: Coding, Reading</p></li>
-                          <li className={s.aboutItem}>
-                           <AiOutlineMail />
-                           <p>
-                        <a href='mailto:andrpoch25gmail.com'>andrpoch25gmail.com</a></p></li>
-                        <li className={s.aboutItem}>
-                           <FaPhoneAlt />
-                           <p>
-                       <a href='tel:+380938921172'>+38(093)8921172</a></p></li>
-                     </ul>
+                       Interests:</p> Coding, Reading</li>
+                          <li className={s.item}>
+                           <AiOutlineMail style={{ color: 'grey'}} />
+                           <p>Mail:</p>
+                        <a className={s.hvrUnderlineFromLeft} 
+                        href='mailto:andrpoch25gmail.com'>andrpoch25gmail.com</a></li>
+                        <li className={s.item}>
+                           <FaPhoneAlt  style={{ color: 'grey'}} />
+                           <p>Phone:</p>
+                       <a className={s.hvrUnderlineFromLeft} href='tel:+380938921172'>+38(093)8921172</a></li>
+                  </ul>
+                   <a href='https://fv20.failiem.lv/down.php?cf&i=be75vfrgn&n=ResumeCV.pdf' className={s.dowloadLink} download>Dowload CV</a>
                   </div>
-                  <a href='https://fv20.failiem.lv/down.php?cf&i=be75vfrgn&n=ResumeCV.pdf' className={s.dowloadLink} download>Dowload CV</a>
+                 
                </div>
-            </div>
-               {/* <div className={s.bg}/> */}
-
          </section>
       </Container>
    )

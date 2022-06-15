@@ -12,6 +12,7 @@ background-image: url(../../assets/images/meHomeImg.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 100%; 
+    margin-bottom: 50px;
 }
 .image::before{
    position: absolute;
@@ -27,12 +28,60 @@ background-image: url(../../assets/images/meHomeImg.jpg);
     z-index: -1;
 }
 .name{
-font-family: 'Poppins';
-font-weight: 700;
-font-size: 30px;
+   text-transform: uppercase;
+   font-size: 40px;
+   font-weight: 800;
+   font-family: 'Montserrat';
+   margin-bottom: 20px;
+}
+.typewriter{
+   display: flex;
 }
 .title{
 font-family: 'Fascinate';
 font-weight: 400;
-font-size: 30px;
+font-size: 25px;
+}
+.type {
+  display:inline-block;
+  vertical-align: bottom;
+}
+
+.type > span {
+  display:grid;
+  overflow: hidden;
+  color: rgb(82, 80, 80);
+  height:2.4em;
+}
+
+.type span span {
+  width:0%;
+font-family: 'Fascinate';
+font-weight: 400;
+max-width:max-content;
+font-size: 25px;
+  overflow: hidden;
+  height:inherit;
+  word-break:break-all;
+  animation:
+    c 0.5s infinite steps(1),  
+    t 2s linear infinite alternate,
+    m 12s steps(3) infinite;
+}
+.type span span:before {
+  content:" ";
+  display:inline-block;
+}
+
+@keyframes t{
+  90%,100% {width:100%}
+}
+
+@keyframes c{
+  0%,100%{box-shadow:5px 0 0 #0000}
+  50%    {box-shadow:5px 0 0 grey  }
+}
+
+@keyframes m{
+  100% {transform:translateY(-300%)}
 }

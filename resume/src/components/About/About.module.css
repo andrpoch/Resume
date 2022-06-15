@@ -49,28 +49,51 @@ display: flex;
 display: flex;
 justify-content: center;
 color: black;
+font-size: 20px;
+font-weight: 600;
 }
-.textEffect::before {
-content: "Web Developer";
-animation: animate infinite 5s;
-padding-left: 10px;
-color: grey;
+.type {
+  display:inline-block;
+  vertical-align: bottom;
 }
-  
-        @keyframes animate {
-  
-            0% {
-                content: "Web Developer";
-            }
-  
-            50% {
-                content: "Front-End Developer";
-            }
-  
-            75% {
-                content: "Full Stack developer";
-            }
-        }
+
+.type > span {
+  display:grid;
+  overflow: hidden;
+  height:1.7em;
+  color: rgb(82, 80, 80);
+}
+
+.type span span {
+  width:0%;
+      font-size: 20px;
+    font-weight: 600;
+  max-width:max-content;
+  overflow: hidden;
+  height:inherit;
+  word-break:break-all;
+  animation:
+    c 0.5s infinite steps(1),  
+    t 2s linear infinite alternate,
+    m 12s steps(3) infinite;
+}
+.type span span:before {
+  content:" ";
+  display:inline-block;
+}
+
+@keyframes t{
+  90%,100% {width:100%}
+}
+
+@keyframes c{
+  0%,100%{box-shadow:5px 0 0 #0000}
+  50%    {box-shadow:5px 0 0 grey  }
+}
+
+@keyframes m{
+  100% {transform:translateY(-300%)}
+}
 .aboutMe span {
 color: grey;
 font-style: italic;
@@ -83,4 +106,71 @@ font-family: mulish;
     letter-spacing: .5px;
     word-wrap: break-word;
     font-weight: 400;
+}
+.list{
+margin: 25px 0px 40px 0px;
+display: flex;
+flex-wrap: wrap;
+}
+.item{
+display: flex;
+align-items: center;
+width: 50%;
+margin-bottom: 20px;
+}
+.item:nth-child(5){
+ margin-bottom: 0px;   
+}
+.item:nth-child(6){
+ margin-bottom: 0px;   
+}
+.item p {
+    margin:0 20px 0 15px;
+    font-weight: 600;
+    color: #000;
+}
+.hvrUnderlineFromLeft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvrUnderlineFromLeft:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  background: grey;
+  bottom: 0;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvrUnderlineFromLeft:hover:before, .hvrUnderlineFromLeft:focus:before, .hvrUnderlineFromLeft :active:before {
+  right: 0;
+}
+.dowloadLink{
+    padding: 12px 45px;
+    background-color: grey;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 5px;
+}
+.dowloadLink:hover,
+.dowloadLink:focus{
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+-webkit-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+-moz-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
 }
