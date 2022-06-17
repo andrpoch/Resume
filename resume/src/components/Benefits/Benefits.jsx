@@ -1,53 +1,59 @@
 import React from 'react';
 import s from './Benefits.module.css';
 import Container from '../Container/Container';
-
+import { HiOutlineLightBulb } from 'react-icons/hi';
+import { IoIosPeople } from 'react-icons/io';
+import Responsibility from '../../assets/logo/Responsibility';
 export default function Benefits() {
    return (
       <Container>
          <section className={s.benefits}>
              <p className={s.mainText}>Benefits</p>
             <h2 className={s.mainName}>My Pros</h2>
-             <div className={s.benefitsWrap}>
                <ul className={s.list}>
                   <li className={s.item}>
                      <div className={s.card}>
-                        <h3 className={s.title}></h3>
-                        <p className={s.text}></p>
+                     <Responsibility/>
+                        <h3 className={s.title}>Responsibility</h3>
+                        <p className={s.text}>Web design is a similar process of creation, with the intention of presenting...</p>
                      </div>
                   </li>
                   <li className={s.item}>
                      <div className={s.card}>
-                        <h3 className={s.title}></h3>
-                        <p className={s.text}></p>
+                         <IoIosPeople style={{ width: "50px", height: "50px", color: 'grey'}} />
+                        <h3 className={s.title}>Teamwork</h3>
+                        <p className={s.text}>Web design is a similar process of creation, with the intention of presenting...</p>
                      </div>
                   </li>
                   <li className={s.item}>
                      <div className={s.card}>
-                        <h3 className={s.title}></h3>
-                        <p className={s.text}></p>
+                         <HiOutlineLightBulb style={{ width: "50px", height: "50px", color: 'grey'}} />
+                        <h3 className={s.title}>Hardworking</h3>
+                        <p className={s.text}>Web design is a similar process of creation, with the intention of presenting...</p>
                      </div>
                   </li>
                   <li className={s.item}>
                      <div className={s.card}>
-                        <h3 className={s.title}></h3>
-                        <p className={s.text}></p>
+                         <HiOutlineLightBulb style={{ width: "50px", height: "50px", color: 'grey'}} />
+                        <h3 className={s.title}>Meticulous</h3>
+                        <p className={s.text}>Web design is a similar process of creation, with the intention of presenting...</p>
                      </div>
                   </li>
                   <li className={s.item}>
                      <div className={s.card}>
-                        <h3 className={s.title}></h3>
-                        <p className={s.text}></p>
+                         <HiOutlineLightBulb style={{ width: "50px", height: "50px", color: 'grey'}} />
+                        <h3 className={s.title}>Flexible</h3>
+                        <p className={s.text}>Web design is a similar process of creation, with the intention of presenting...</p>
                      </div>
                   </li>
                   <li className={s.item}>
                      <div className={s.card}>
-                        <h3 className={s.title}></h3>
-                        <p className={s.text}></p>
+                         <HiOutlineLightBulb style={{ width: "50px", height: "50px", color: 'grey'}} />
+                        <h3 className={s.title}>Quiet</h3>
+                        <p className={s.text}>Web design is a similar process of creation, with the intention of presenting...</p>
                      </div>
                   </li>
                </ul>
-            </div>
          </section>
       </Container>
    )
