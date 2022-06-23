@@ -21,6 +21,7 @@ font-weight: 800;
 width: 35%;
 }
 .image{
+  margin-left: 30px;
    width: 350px;
    height: 350px;
 background-image: url(../../assets/images/meHomeImg.jpg);
@@ -34,7 +35,7 @@ background-image: url(../../assets/images/meHomeImg.jpg);
    border: 10px solid black;
    position: absolute;
    top: 320px;
-   left: 390px;
+   left: 490px;
 }
 
 .right{
