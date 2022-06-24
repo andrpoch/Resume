@@ -6,6 +6,7 @@ import { IoIosPeople } from 'react-icons/io';
 import { FaFistRaised } from 'react-icons/fa'
 import {GiMagnifyingGlass,GiUnbalanced} from 'react-icons/gi'
 import Responsibility from '../../assets/logo/Responsibility.svg';
+
 export default function Benefits() {
    return (
       <Container>

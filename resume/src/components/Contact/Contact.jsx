@@ -10,5 +10,5 @@ export default function Contact() {
                <h2 className={s.mainName}>Get in Touch</h2>
          </section>
       </Container>
-   )   
+   )
 };
