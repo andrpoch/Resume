@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {
    AiOutlineHome,
@@ -11,19 +11,21 @@ import {
 import { BsListStars } from "react-icons/bs";
 import { IoIosContact } from 'react-icons/io';
 import { FaTelegramPlane } from 'react-icons/fa';
+import myLogo from '../../assets/logo/myLogo.svg';
 import s from './NavBar.module.css';
 
 export default function NavBar() {
    return (
          <header className={s.header}>
-            <nav className={s.nav}>
-            <NavLink to='/' className={s.link}
-        >
+         <nav className={s.nav}>
+            <NavLink to='/' className={s.test}>
+               <img src={myLogo} alt='my logo' className={s.logo} />
+            </NavLink>
+            <NavLink to='/' className={s.link}>
                Home
                <AiOutlineHome style={{ width: "25px", height: "25px" }} />
             </NavLink>
-            <NavLink to='/about' className={s.link}
-              >
+            <NavLink to='/about' className={s.link}>
                About
                <AiOutlineInfoCircle style={{ width: "25px", height: "25px" }} />
             </NavLink>
