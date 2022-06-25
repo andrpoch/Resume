@@ -1,22 +1,115 @@
 .contact{
-   padding-top: 140px;
+padding-top: 140px;
 }
 .mainText{
 font-family: 'Poppins';
 font-weight: 500;
+font-size: 20px;
 text-transform: uppercase;
 margin-bottom: 4px;
 color: grey;
 }
 .mainName{
-font-size: 30px;
-font-weight: 800;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+.text {
+  max-width: 520px;
+  font-family: mulish;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: .5px;
+}
+.wrapper{
+  display: flex;
+  margin-top: 40px;
+}
+.formWrapper {
+  margin-right: 50px;
+}
+form {
+	width:520px;
+	height:auto;
+	overflow:hidden;
+	background:white;
+	border-radius:10px;
+}
+.input {
+	margin:15px 0;
+	padding:15px 10px;
+	width:100%;
+	outline:none;
+	border:3px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+  -webkit-transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -ms-transition:0.2s ease all;
+  -o-transition:0.2s ease all;
+  transition:0.2s ease all;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-  -webkit-text-fill-color: black;
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-  transition: background-color 5000s ease-in-out 0s;
+.input[type=text]:focus,
+.input[type=text]:hover,
+.input[type=email]:focus,
+.input[type=email]:hover,
+.textarea[type='message']:focus,
+.textarea[type='message']:hover {
+	border-color:grey;
+}
+.input[type=submit] {
+	padding:15px 50px;
+	width:auto;
+	background:#1abc9c;
+	border:none;
+	color:white;
+	cursor:pointer;
+	display:inline-block;
+	float:right;
+	clear:right;
+	-webkit-transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -ms-transition:0.2s ease all;
+  -o-transition:0.2s ease all;
+  transition:0.2s ease all;
+}
+
+.input[type=submit]:hover,
+.input[type=submit]:focus {
+	opacity:0.8;
+}
+
+.input[type="submit"]:active {
+	opacity:0.4;
+}
+
+form label {
+  font-size:14px;
+	color:darkgray;
+	cursor:pointer;
+}
+form label,
+form .input,
+form .textarea  {
+	float:left;
+	clear:both;
+}
+.textarea {
+  width: 520px;
+  margin:15px 0;
+	padding:15px 10px;
+	/* width:100%; */
+	outline:none;
+	border:3px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+  resize: none;
+    border: 1px solid rgba(0,0,0,.2);
+    height: 120px;
 }

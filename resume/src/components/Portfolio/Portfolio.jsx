@@ -36,7 +36,7 @@ export default function Portfolio() {
                    <li className={s.item}>
                      <div className={s.overlay}>
                         <div className={s.btnWrapper}>
-                           <a href='https://memx86.github.io/team-project-js-tmdb/c' className={s.btn} target='_blank' rel="noopener noreferrer">Site</a>
+                           <a href='https://memx86.github.io/team-project-js-tmdb/' className={s.btn} target='_blank' rel="noopener noreferrer">Site</a>
                            <a href='https://github.com/andrpoch/team-project-js-filmoteka.git' className={s.btn} target='_blank' rel="noopener noreferrer">Code</a>
                         </div>
                         <img src={filmoteka} alt='Filmoteka ' className={s.img} />
@@ -54,8 +54,8 @@ export default function Portfolio() {
                    <li className={s.item}>
                      <div className={s.overlay}>
                         <div className={s.btnWrapper}>
-                           <a href='https://github.com/andrpoch/slides.git' className={s.btn} target='_blank' rel="noopener noreferrer">Code</a>
                            <a href='https://andrpoch.github.io/slides/' className={s.btn} target='_blank' rel="noopener noreferrer">Site</a>
+                           <a href='https://github.com/andrpoch/slides.git' className={s.btn} target='_blank' rel="noopener noreferrer">Code</a>
                         </div>
                         <img src={slides} alt='Slides ' className={s.img} />
                      </div>
