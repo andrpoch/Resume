@@ -1,20 +1,20 @@
 {
-  "main.css": "/static/css/main.719ead6e.chunk.css",
-  "main.js": "/static/js/main.1e9ebd13.chunk.js",
-  "main.js.map": "/static/js/main.1e9ebd13.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.0942dbb2.chunk.js": "/static/js/2.0942dbb2.chunk.js",
-  "static/js/2.0942dbb2.chunk.js.map": "/static/js/2.0942dbb2.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.7131887879b87fc37bcb74d5c0e2d719.js": "/precache-manifest.7131887879b87fc37bcb74d5c0e2d719.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.719ead6e.chunk.css.map": "/static/css/main.719ead6e.chunk.css.map",
-  "static/media/Responsibility.svg": "/static/media/Responsibility.2cb60de1.svg",
-  "static/media/contacts-min.jpg": "/static/media/contacts-min.32a3d3c8.jpg",
-  "static/media/filmoteka-min.jpg": "/static/media/filmoteka-min.d1efd82a.jpg",
-  "static/media/iceCream-min.jpg": "/static/media/iceCream-min.f0756dfc.jpg",
-  "static/media/Home.module.css": "/static/media/meHomeImg.84964a34.jpg",
-  "static/media/myLogo.svg": "/static/media/myLogo.3ea0628c.svg",
-  "static/media/wallet-min.jpg": "/static/media/wallet-min.e598cfd9.jpg"
+  "files": {
+    "main.css": "/static/css/main.3aa60767.css",
+    "main.js": "/static/js/main.ce877b88.js",
+    "static/media/meHomeImg.jpg": "/static/media/meHomeImg.01cd294ae57fc046acd5.jpg",
+    "static/media/iceCream-min.jpg": "/static/media/iceCream-min.a2ab0a683c3f04bce894.jpg",
+    "static/media/contacts-min.jpg": "/static/media/contacts-min.d735305c30394d222180.jpg",
+    "static/media/myLogo.svg": "/static/media/myLogo.73ecebb308d02599da870437058eb2b0.svg",
+    "static/media/wallet-min.jpg": "/static/media/wallet-min.05cb54be508e23d4fe7b.jpg",
+    "static/media/filmoteka-min.jpg": "/static/media/filmoteka-min.290c4d58e0a31e98998f.jpg",
+    "static/media/Responsibility.svg": "/static/media/Responsibility.df04a4f6459ee00d46450bb267166368.svg",
+    "index.html": "/index.html",
+    "main.3aa60767.css.map": "/static/css/main.3aa60767.css.map",
+    "main.ce877b88.js.map": "/static/js/main.ce877b88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3aa60767.css",
+    "static/js/main.ce877b88.js"
+  ]
 }
