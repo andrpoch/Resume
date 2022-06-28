@@ -70,8 +70,7 @@ form {
 	border:none;
 	color:white;
 	cursor:pointer;
-	display:inline-block;
-	float:right;
+	display:inline-block;;
 	clear:right;
 	-webkit-transition:0.2s ease all;
   -moz-transition:0.2s ease all;
