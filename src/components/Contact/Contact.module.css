@@ -35,15 +35,14 @@ form {
 	height:auto;
 	overflow:hidden;
 	background:white;
-	border-radius:10px;
 }
 .input {
 	margin:15px 0;
 	padding:15px 10px;
 	width:100%;
 	outline:none;
-	border:3px solid #bbb;
-	border-radius:20px;
+	border:2px solid #bbb;
+	border-radius:2px;
 	display:inline-block;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
@@ -100,15 +99,23 @@ form .textarea  {
 	clear:both;
 }
 .textarea {
-  width: 520px;
+  width: 494px;
   margin:15px 0;
 	padding:15px 10px;
-	/* width:100%; */
 	outline:none;
-	border:3px solid #bbb;
-	border-radius:20px;
+	border:2px solid #bbb;
+	border-radius:2px;
 	display:inline-block;
-  resize: none;
-    border: 1px solid rgba(0,0,0,.2);
-    height: 120px;
+  	resize: none;
+   height: 120px;
+	font-size: 15px;
+}
+.btn {
+	padding: 12px 45px;
+    background-color: grey;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 5px;
+	 border: none;
 }
