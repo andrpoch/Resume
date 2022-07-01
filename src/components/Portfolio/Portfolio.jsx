@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './Portfolio.module.css';
 import Container from '../Container/Container';
 import wallet from '../../assets/images/portfolio/wallet-min.jpg'
 import contacts from '../../assets/images/portfolio/contacts-min.jpg'
 import filmoteka from '../../assets/images/portfolio/filmoteka-min.jpg'
 import iceCream from '../../assets/images/portfolio/iceCream-min.jpg'
 import slides from '../../assets/images/portfolio/slides-min.jpg'
+import s from './Portfolio.module.scss';
 
 export default function Portfolio() {
    return (

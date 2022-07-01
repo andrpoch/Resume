@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './About.module.css';
 import Container from '../Container/Container';
 import Tilt from 'react-parallax-tilt';
 import {
@@ -10,6 +9,8 @@ import {
    FaPhoneAlt
 } from 'react-icons/fa';
 import {AiOutlineMail} from 'react-icons/ai'
+import s from './About.module.scss';
+
 export default function About() {
    return (
       <Container>

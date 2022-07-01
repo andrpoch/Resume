@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css';
-import s from './Contact.module.css';
-import Container from '../Container/Container';;
+import Container from '../Container/Container';
+import s from './Contact.module.scss';
 
 export default function Contact ()  {
    const form = useRef();

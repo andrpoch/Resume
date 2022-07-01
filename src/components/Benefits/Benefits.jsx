@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './Benefits.module.css';
 import Container from '../Container/Container';
 import {IoShuffle} from 'react-icons/io5'
 import { IoIosPeople } from 'react-icons/io';
 import { FaFistRaised } from 'react-icons/fa'
 import {GiMagnifyingGlass,GiUnbalanced} from 'react-icons/gi'
 import Responsibility from '../../assets/logo/Responsibility.svg';
+import s from './Benefits.module.scss';
 
 export default function Benefits() {
    return (
