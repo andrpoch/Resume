@@ -13,16 +13,12 @@
 .nav{
    clear: both;
 }
-.logo{
-margin-bottom: 50px;
-margin-left: auto;
-margin-right: auto;
+.linkLogo {
+   display:flex;
+   justify-content: space-around;
+   margin-bottom: 50px;
 }
-.logo:focus,
-.logo:focus{
-   fill:black;
-}
-.link{
+   .link{
    display: flex;
    align-items: center;
    color: black;

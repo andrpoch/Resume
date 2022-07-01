@@ -1,106 +1,100 @@
 .about{
-    padding-top: 140px;
-}
-.mainText{
+  padding-top: 140px;
+  &__text{
 font-family: 'Poppins';
 font-weight: 500;
 text-transform: uppercase;
 margin-bottom: 4px;
 color: grey;
 }
-.mainName{
+  &__name{
 font-size: 30px;
 font-weight: 800;
 }
-.aboutInner{
+  &__inner{
     padding-top: 100px;
     display: flex;
-
+}
 }
 .left{
 width: 35%;
+  &__bg{
+    width: 340px;
+    height: 340px;
+    border: 10px solid black;
+    position: absolute;
+    top: 320px;
+    left: 490px;
+  }
+  &__image{
+    margin-left: 30px;
+    width: 350px;
+    height: 350px;
+  background-image: url(../../assets/images/meHomeImg.jpg);
+  background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
 }
-.image{
-  margin-left: 30px;
-   width: 350px;
-   height: 350px;
-background-image: url(../../assets/images/meHomeImg.jpg);
- background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.bg{
-   width: 340px;
-   height: 340px;
-   border: 10px solid black;
-   position: absolute;
-   top: 320px;
-   left: 490px;
-}
-
 .right{
 width: 65%;
 margin-left: 70px;
-}
-.aboutTitle{
+&__title{
 margin-bottom: 30px;
 display: flex;
 }
-.aboutName{
+&__name{
 display: flex;
 justify-content: center;
 color: black;
 font-size: 20px;
 font-weight: 600;
 }
-.type {
+&__type {
   display:inline-block;
   vertical-align: bottom;
+  & > span {
+    display:grid;
+    overflow: hidden;
+    height:1.7em;
+    color: rgb(82, 80, 80);
+  }
+  & span span {
+    width:0%;
+        font-size: 20px;
+      font-weight: 600;
+    max-width:max-content;
+    overflow: hidden;
+    height:inherit;
+    word-break:break-all;
+    animation:
+      c 0.5s infinite steps(1),  
+      t 2s linear infinite alternate,
+      m 12s steps(3) infinite;
+  }
+  & span span:before {
+    content:" ";
+    display:inline-block;
+  }
 }
-
-.type > span {
-  display:grid;
-  overflow: hidden;
-  height:1.7em;
-  color: rgb(82, 80, 80);
-}
-
-.type span span {
-  width:0%;
-      font-size: 20px;
-    font-weight: 600;
-  max-width:max-content;
-  overflow: hidden;
-  height:inherit;
-  word-break:break-all;
-  animation:
-    c 0.5s infinite steps(1),  
-    t 2s linear infinite alternate,
-    m 12s steps(3) infinite;
-}
-.type span span:before {
-  content:" ";
-  display:inline-block;
 }
 
 @keyframes t{
   90%,100% {width:100%}
 }
-
 @keyframes c{
   0%,100%{box-shadow:5px 0 0 #0000}
   50%    {box-shadow:5px 0 0 grey  }
 }
-
 @keyframes m{
   100% {transform:translateY(-300%)}
 }
-.aboutMe span {
+
+.me span {
 color: grey;
 font-style: italic;
 font-weight: 500;
-}
-.aboutMeText{
+&__text{
 font-family: mulish;
     font-size: 16px;
     line-height: 2;
@@ -108,27 +102,45 @@ font-family: mulish;
     word-wrap: break-word;
     font-weight: 400;
 }
-.list{
+&__list{
 margin: 25px 0px 40px 0px;
 display: flex;
 flex-wrap: wrap;
 }
-.item{
+&__item{
 display: flex;
 align-items: center;
 width: 50%;
 margin-bottom: 20px;
 }
-.item:nth-child(5){
+&__item:nth-child(5){
  margin-bottom: 0px;   
 }
-.item:nth-child(6){
+&__item:nth-child(6){
  margin-bottom: 0px;   
 }
-.item p {
+&__item p {
     margin:0 20px 0 15px;
     font-weight: 600;
     color: #000;
+}
+&__download_link{
+    padding: 12px 45px;
+    background-color: grey;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 5px;
+    &:hover,
+    &:focus{
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+-webkit-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+-moz-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+}
+}
 }
 .hvrUnderlineFromLeft {
   display: inline-block;
@@ -157,21 +169,4 @@ margin-bottom: 20px;
 }
 .hvrUnderlineFromLeft:hover:before, .hvrUnderlineFromLeft:focus:before, .hvrUnderlineFromLeft :active:before {
   right: 0;
-}
-.dowloadLink{
-    padding: 12px 45px;
-    background-color: grey;
-    color: white;
-    font-family: 'Poppins';
-    font-weight: 500;
-    border-radius: 5px;
-}
-.dowloadLink:hover,
-.dowloadLink:focus{
-    color: grey;
-    background-color: white;
-    border: 1px solid grey;
-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
--webkit-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
--moz-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion"
 import { NavLink } from 'react-router-dom';
 import {
    AiOutlineHome,
@@ -12,17 +13,27 @@ import { BsListStars } from "react-icons/bs";
 import { IoIosContact } from 'react-icons/io';
 import { FaTelegramPlane } from 'react-icons/fa';
 import myLogo from '../../assets/logo/myLogo.svg';
+import myLogoReact from '../../assets/logo/myLogoReact.svg';
 import s from './NavBar.module.scss';
 
-import myLogoReact from '../../assets/logo/myLogoReact.svg';
 export default function NavBar() {
    return (
          <header className={s.header}>
          <nav className={s.nav}>
-            <NavLink to='/' className={s.test}>
-               <img src={myLogoReact} alt='my logo'  />
+            <NavLink to='/' className={s.linkLogo}>
+               <motion.div
+   initial={{ scale: 0 }}
+   animate={{ rotate: 360, scale: 1 }}
+   transition={{
+      type: "spring",
+      stiffness: 260,
+      damping: 20
+                  }}
+               >
+                  <img src={myLogoReact} alt='my logo' className={s.logo} />
+               </motion.div>
+               
                <img src={myLogo} alt='my logo'
-                  className={s.logo}
                />
             </NavLink>
             <NavLink to='/' className={s.link}>

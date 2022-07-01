@@ -11,15 +11,15 @@ export default function Benefits() {
    return (
       <Container>
          <section className={s.benefits}>
-            <p className={s.mainText}>Benefits</p>
-            <h2 className={s.mainName}>My Pros</h2>
-            <div className={s.wrapper}>
+            <p className={s.benefits__name}>Benefits</p>
+            <h2 className={s.benefits__title}>My Pros</h2>
+            <div className={s.benefits__wrapper}>
                <ul className={s.list}>
-                  <li className={s.item}>
-                     <div className={s.card}>
+                  <li className={s.list__item}>
+                     <div className={s.list__item_card}>
                         <img src={Responsibility} alt='Responsibility'/>
-                        <h3 className={s.title}>Responsibility</h3>
-                        <p className={s.text}>I treat my work responsibly, and I understand that everything is needed on time and with high quality.</p>
+                        <h3 className={s.list__item_title}>Responsibility</h3>
+                        <p className={s.list__item_text}>I treat my work responsibly, and I understand that everything is needed on time and with high quality.</p>
                      </div>
                   </li>
                   <li className={s.item}>

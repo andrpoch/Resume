@@ -1,18 +1,18 @@
 .benefits{
    padding-top: 140px;
-}
-.mainText{
-font-family: 'Poppins';
-font-weight: 500;
-font-size: 20px;
-text-transform: uppercase;
-margin-bottom: 4px;
-color: grey;
-}
-.mainName{
-font-family: 'Poppins';
-font-size: 30px;
-font-weight: 800;
+   &__name{
+   font-family: 'Poppins';
+   font-weight: 500;
+   font-size: 20px;
+   text-transform: uppercase;
+   margin-bottom: 4px;
+   color: grey;
+   }
+   &__title{
+   font-family: 'Poppins';
+   font-size: 30px;
+   font-weight: 800;
+   }
 }
 .wrapper{
    margin-left: auto;
@@ -25,48 +25,45 @@ font-weight: 800;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
-}
-@media screen and (min-width: 1600px) {
-   .wrapper {
-       width: 1100px;
-   }
-   .item:nth-child(1){
-   margin-left: 0px;
-}
-      .item:nth-child(4){
-   margin-left: 0px;
-      }
-}
-.item{
+   &__item{
    margin-bottom: 50px;
    margin-left: 50px;
-}
-
-
-.card{
+   &_card{
    max-width: 250px;
    height:250px;
    padding: 60px 40px;
    background-color: #F9F9F9;
    box-shadow: 0 0 20px rgb(0 0 0 / 9%);
    transition: all 300ms ease;
-}
-.card:hover,
-.card:focus{
-   box-shadow: 0 0 20px rgb(0 0 0 / 25%);
-}
-.title{
+   &:hover,
+   &:focus{
+      box-shadow: 0 0 20px rgb(0 0 0 / 25%);
+   }
+   }
+   &_title{
    margin: 20px 0px;
    font-family: 'Poppins';
    font-weight: 600;
    font-size: 18px;
    font-weight: 600;
-}
-.text{
+   }
+   &_text{
    font-family: mulish;
    font-weight: 500;
    font-size: 16px;
    line-height: 2;
    letter-spacing: .5px;
+      }
+   }
 }
-
+@media screen and (min-width: 1600px) {
+   .wrapper {
+       width: 1100px;
+   }
+   .list__item:nth-child(1){
+   margin-left: 0px;
+}
+   .list__item:nth-child(4){
+   margin-left: 0px;
+      }
+}
