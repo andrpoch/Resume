@@ -1,87 +1,87 @@
 .home{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 200px;
-}
-.image{
-   width: 200px;
-   height: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 200px;
+&__image{
+width: 200px;
+height: 200px;
 background-image: url(../../assets/images/meHomeImg.jpg);
- background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 100%; 
-    margin-bottom: 50px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border-radius: 100%;
+margin-bottom: 50px;
 }
-.image::before{
-   position: absolute;
-    content: "";
-    top: -8px;
-    bottom: -8px;
-    left: -8px;
-    right: -8px;
-   width: 220px;
-   height: 220px;
-    border-radius: 100%;
-    background-color: rgb(0, 0, 0);
-    z-index: -1;
+&__image::before{
+position: absolute;
+content: "";
+top: -8px;
+bottom: -8px;
+left: -8px;
+right: -8px;
+width: 220px;
+height: 220px;
+border-radius: 100%;
+background-color: rgb(0, 0, 0);
+z-index: -1;
 }
-.name{
-   text-transform: uppercase;
-   font-size: 40px;
-   font-weight: 800;
-   font-family: 'Montserrat';
-   margin-bottom: 20px;
+&__name{
+text-transform: uppercase;
+font-size: 40px;
+font-weight: 800;
+font-family: 'Montserrat';
+margin-bottom: 20px;
 }
-.typewriter{
-   display: flex;
+&__typewriter{
+display: flex;
 }
-.title{
+&__title{
 font-family: 'Fascinate';
 font-weight: 400;
 font-size: 25px;
 }
-.type {
-  display:inline-block;
-  vertical-align: bottom;
+&__type {
+display:inline-block;
+vertical-align: bottom;
 }
 
-.type > span {
-  display:grid;
-  overflow: hidden;
-  color: rgb(82, 80, 80);
-  height:2.4em;
+&__type > span {
+display:grid;
+overflow: hidden;
+color: rgb(82, 80, 80);
+height:2.4em;
 }
 
-.type span span {
-  width:0%;
+&__type span span {
+width:0%;
 font-family: 'Fascinate';
 font-weight: 400;
 max-width:max-content;
 font-size: 25px;
-  overflow: hidden;
-  height:inherit;
-  word-break:break-all;
-  animation:
-    c 0.5s infinite steps(1),  
-    t 2s linear infinite alternate,
-    m 12s steps(3) infinite;
+overflow: hidden;
+height:inherit;
+word-break:break-all;
+animation:
+  c 0.5s infinite steps(1),
+  t 2s linear infinite alternate,
+  m 12s steps(3) infinite;
 }
-.type span span:before {
-  content:" ";
-  display:inline-block;
+&__type span span:before {
+content:" ";
+display:inline-block;
+}
 }
 
 @keyframes t{
-  90%,100% {width:100%}
+90%,100% {width:100%}
 }
 
 @keyframes c{
-  0%,100%{box-shadow:5px 0 0 #0000}
-  50%    {box-shadow:5px 0 0 grey  }
+0%,100%{box-shadow:5px 0 0 #0000}
+50%    {box-shadow:5px 0 0 grey  }
 }
 
 @keyframes m{
-  100% {transform:translateY(-300%)}
+100% {transform:translateY(-300%)}
 }
