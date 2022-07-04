@@ -39,7 +39,7 @@ export default function About() {
              <p className={s.me__text}>
           Hi! My name is <span>Andrew Pochapskyi</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
                   </div>
-                     <ul className={s.me_list}>
+                     <ul className={s.me__list}>
                         <li className={s.me__item}>
                            <FaBirthdayCake style={{ color: 'grey'}} />
                            <p>
@@ -66,7 +66,7 @@ export default function About() {
                            <p>Phone:</p>
                        <a className={s.hvrUnderlineFromLeft} href='tel:+380938921172'>+38(093)8921172</a></li>
                   </ul>
-                   <a href='https://fv20.failiem.lv/down.php?cf&i=be75vfrgn&n=ResumeCV.pdf' className={s.me_download_link} download>Dowload CV</a>
+                   <a href='https://fv20.failiem.lv/down.php?cf&i=be75vfrgn&n=ResumeCV.pdf' className={s.me__btn} download>Dowload CV</a>
                   </div>
                  
                </div>

@@ -22,44 +22,44 @@ export default function Benefits() {
                         <p className={s.list__item_text}>I treat my work responsibly, and I understand that everything is needed on time and with high quality.</p>
                      </div>
                   </li>
-                  <li className={s.item}>
-                     <div className={s.card}>
+                  <li className={s.list__item}>
+                     <div className={s.list__item_card}>
                         <IoIosPeople style={{ width: "50px", height: "50px", color: 'grey'}} />
-                        <h3 className={s.title}>Teamwork</h3>
-                        <p className={s.text}>He had experience working in a team, helping the team and thus increasing efficiency.</p>
+                        <h3 className={s.list__item_title}>Teamwork</h3>
+                        <p className={s.list__item_text}>He had experience working in a team, helping the team and thus increasing efficiency.</p>
                      </div>
                   </li>
-                  <li className={s.item}>
-                     <div className={s.card}>
+                  <li className={s.list__item}>
+                     <div className={s.list__item_card}>
                         <FaFistRaised style={{ width: "50px", height: "50px", color: 'grey'}} />
-                        <h3 className={s.title}>Hardworking</h3>
-                        <p className={s.text}>I love what I do, I also like to find various interesting solutions to accomplish my task.</p>
+                        <h3 className={s.list__item_title}>Hardworking</h3>
+                        <p className={s.list__item_text}>I love what I do, I also like to find various interesting solutions to accomplish my task.</p>
                      </div>
                   </li>
-                  <li className={s.item}>
-                     <div className={s.card}>
+                  <li className={s.list__item}>
+                     <div className={s.list__item_card}>
                         <GiMagnifyingGlass style={{ width: "50px", height: "50px", color: 'grey'}} />
-                        <h3 className={s.title}>Meticulous</h3>
-                        <p className={s.text}>I work so that everything was clearly in accordance with the terms of reference, and so that there were no questions.</p>
+                        <h3 className={s.list__item_title}>Meticulous</h3>
+                        <p className={s.list__item_text}>I work so that everything was clearly in accordance with the terms of reference, and so that there were no questions.</p>
                      </div>
                   </li>
-                  <li className={s.item}>
-                     <div className={s.card}>
+                  <li className={s.list__item}>
+                     <div className={s.list__item_card}>
                      <IoShuffle style={{
                         width: "50px", height: "50px", color: 'grey',
                      transform: 'rotate(270deg)'}}
                         />
-                        <h3 className={s.title}>Flexible</h3>
-                     <p className={s.text}>
+                        <h3 className={s.list__item_title}>Flexible</h3>
+                     <p className={s.list__item_text}>
                         I can adapt to different problems and find interesting solutions, as well as learn new things
                         </p>
                      </div>
                   </li>
-                  <li className={s.item}>
-                     <div className={s.card}>
+                  <li className={s.list__item}>
+                     <div className={s.list__item_card}>
                         <GiUnbalanced style={{ width: "50px", height: "50px", color: 'grey'}} />
-                        <h3 className={s.title}>Balanced</h3>
-                        <p className={s.text}>I find a balance for my life so as to be effective in my work, and perform more and better.</p>
+                        <h3 className={s.list__item_title}>Balanced</h3>
+                        <p className={s.list__item_text}>I find a balance for my life so as to be effective in my work, and perform more and better.</p>
                      </div>
                   </li>
                </ul>

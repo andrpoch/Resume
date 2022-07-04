@@ -18,22 +18,19 @@ import s from './NavBar.module.scss';
 
 export default function NavBar() {
    return (
-         <header className={s.header}>
+      <header className={s.header}>
          <nav className={s.nav}>
             <NavLink to='/' className={s.linkLogo}>
                <motion.div
-   initial={{ scale: 0 }}
-   animate={{ rotate: 360, scale: 1 }}
-   transition={{
-      type: "spring",
-      stiffness: 260,
-      damping: 20
-                  }}
-               >
-                  <img src={myLogoReact} alt='my logo' className={s.logo} />
+               initial={{ scale: 0 }}
+               animate={{ rotate: 360, scale: 1 }}
+               transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20 }}>
+            <img src={myLogoReact} alt='my logo' className={s.logoReact} />
                </motion.div>
-               
-               <img src={myLogo} alt='my logo'
+               <img src={myLogo} alt='my logo'  className={s.logo}
                />
             </NavLink>
             <NavLink to='/' className={s.link}>
@@ -57,13 +54,11 @@ export default function NavBar() {
                <IoIosContact style={{ width: "25px", height: "25px" }} />
                </NavLink>
          </nav>
-         <div className={s.socialWrapper}>
             <ul className={s.socialList}>
                <li ><a className={s.socialLink} href="https://github.com/andrpoch"><AiFillGithub style={{ width: "25px", height: "25px" }} /></a></li>
                <li><a className={s.socialLink} href="https://www.linkedin.com/in/andr-poch/"><AiOutlineLinkedin style={{ width: "25px", height: "25px" }} /></a></li>
                <li><a className={s.socialLink} href="https://t.me/andr_poch"><FaTelegramPlane style={{ width: "25px", height: "25px" }} /></a></li>
             </ul>
-         </div>
          </header>
    )
 };

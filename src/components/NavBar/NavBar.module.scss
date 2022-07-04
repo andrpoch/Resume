@@ -1,5 +1,5 @@
 .header{
-   width: 350px;
+   width: 250px;
    position: fixed;
    top: 0;
    left: 0;
@@ -16,7 +16,14 @@
 .linkLogo {
    display:flex;
    justify-content: space-around;
+   align-items: center;
    margin-bottom: 50px;
+}
+.logoReact {
+   max-width: 80px;
+}
+.logo {
+   max-width: 200px;
 }
    .link{
    display: flex;
