@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../Container/Container';
-import Tilt from 'react-parallax-tilt';
+import { motion, useAnimation } from 'framer-motion';
 import {
    FaBirthdayCake,
    FaRegCalendarAlt,
@@ -10,8 +10,20 @@ import {
 } from 'react-icons/fa';
 import {AiOutlineMail} from 'react-icons/ai'
 import s from './About.module.scss';
+import img from '../../assets/images/meHomeImg.jpg'
 
 export default function About() {
+   const imgAnimation = useAnimation();
+   const bgAnimate = useAnimation();
+
+   const handleMouseMoved = e => {
+   const { clientX, clientY } = e
+   let offsetX = clientX - window.innerWidth / 2;
+   let offsetY = clientY - window.innerWidth / 2;
+      imgAnimation.start({ x: offsetX / 20, y: offsetY / 20 });
+   bgAnimate.start({ x: offsetX / 40, y: offsetY / 40 });
+   }
+
    return (
       <Container>
          <section className={s.about}>
@@ -19,10 +31,15 @@ export default function About() {
                <h2 className={s.about__name}>About me</h2>
             <div className={s.about__inner}>
                <div className={s.left}>
-                     <div className={s.left__bg} />
-                  <Tilt>
-                     <div className={s.left__image} />
-                  </Tilt>
+                  <motion.img
+                     animate={imgAnimation}
+                     onMouseMove={e => handleMouseMoved(e)}
+                     src={img}
+                     alt="Me"
+                  />
+                  <motion.div
+                     animate={bgAnimate}
+                     className={s.left__bg} />
                </div>
                <div className={s.right}>
                   <div className={s.right__title}>
@@ -36,8 +53,8 @@ export default function About() {
                   </span>
                   </div>
          <div className={s.me}>
-             <p className={s.me__text}>
-          Hi! My name is <span>Andrew Pochapskyi</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
+            <p className={s.me__text}>
+         Hi! My name is <span>Andrew Pochapskyi</span>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
                   </div>
                      <ul className={s.me__list}>
                         <li className={s.me__item}>

@@ -18,22 +18,16 @@ font-weight: 800;
 }
 .left{
 width: 35%;
+margin-left: 10px;
   &__bg{
-    width: 340px;
-    height: 340px;
-    border: 10px solid black;
-    position: absolute;
-    top: 320px;
-    left: 440px;
-  }
-  &__image{
-    margin-left: 30px;
-    width: 350px;
-    height: 350px;
-  background-image: url(../../assets/images/meHomeImg.jpg);
-  background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+  width: 380px;
+  height: 380px;
+  border: 10px solid black;
+  position: absolute;
+  top: 310px;
+  left: 410px;
+  z-index: -1;
+  background-color: rgb(240, 240, 240);
   }
 }
 .right{
