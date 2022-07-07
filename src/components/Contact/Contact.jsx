@@ -51,7 +51,7 @@ const sendEmail = (object) => {
          <Form className={s.contact__form}>
             <Field type="text" name="name" className={s.contact__form_input} placeholder="Type in your name"/>
             <ErrorMessage name="name" component="div" style={{color:"red"}}/>
-            <Field type="email" name="email" className={s.contact__form_input} placeholder="Type in your name"/>
+            <Field type="email" name="email" className={s.contact__form_input} placeholder="Type in your email"/>
             <ErrorMessage name="email" component="div" style={{color:"red"}}/>
             <Field type="message" name="message" className={s.contact__form_textarea} as="textarea" placeholder="Type in your message"/>
             <ErrorMessage name="message" component="div" style={{color:"red"}}/>

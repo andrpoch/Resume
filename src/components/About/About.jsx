@@ -81,7 +81,7 @@ export default function About() {
                         <li className={s.me__item}>
                            <FaPhoneAlt  style={{ color: 'grey'}} />
                            <p>Phone:</p>
-                       <a className={s.hvrUnderlineFromLeft} href='tel:+380938921172'>+38(093)8921172</a></li>
+                       <a className={s.hvrUnderlineFromLeft} href='tel:+380938921172'>+38 (093) 89 211 72</a></li>
                   </ul>
                    <a href='https://fv20.failiem.lv/down.php?cf&i=be75vfrgn&n=ResumeCV.pdf' className={s.me__btn} download>Dowload CV</a>
                   </div>

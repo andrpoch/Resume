@@ -1,3 +1,4 @@
+@import "../../stylesheet/shared.scss";
 .about{
   padding-top: 140px;
   &__text{
@@ -5,7 +6,7 @@ font-family: 'Poppins';
 font-weight: 500;
 text-transform: uppercase;
 margin-bottom: 4px;
-color: grey;
+color:var(--secondary-text-cl);
 }
   &__name{
 font-size: 30px;
@@ -22,12 +23,11 @@ margin-left: 10px;
   &__bg{
   width: 380px;
   height: 380px;
-  border: 10px solid black;
+  border: 10px solid var(--main-text-cl);
   position: absolute;
   top: 310px;
   left: 410px;
   z-index: -1;
-  background-color: rgb(240, 240, 240);
   }
 }
 .right{
@@ -40,7 +40,7 @@ display: flex;
 &__name{
 display: flex;
 justify-content: center;
-color: black;
+color: var(--main-text-cl);
 font-size: 20px;
 font-weight: 600;
 }
@@ -51,7 +51,7 @@ font-weight: 600;
     display:grid;
     overflow: hidden;
     height:1.7em;
-    color: rgb(82, 80, 80);
+    color: var(--typewrite-text-cl);
   }
   & span span {
     width:0%;
@@ -62,7 +62,7 @@ font-weight: 600;
     height:inherit;
     word-break:break-all;
     animation:
-      c 0.5s infinite steps(1),  
+      c 0.5s infinite steps(1),
       t 2s linear infinite alternate,
       m 12s steps(3) infinite;
   }
@@ -77,8 +77,8 @@ font-weight: 600;
   90%,100% {width:100%}
 }
 @keyframes c{
-  0%,100%{box-shadow:5px 0 0 #0000}
-  50%    {box-shadow:5px 0 0 grey  }
+  0%,100%{box-shadow:5px 0 0 var(--main-text-cl)}
+  50%    {box-shadow:5px 0 0 var(--secondary-text-cl)  }
 }
 @keyframes m{
   100% {transform:translateY(-300%)}
@@ -86,7 +86,7 @@ font-weight: 600;
 
 .me {
   & span {
-color: grey;
+color: var(--secondary-text-cl);
 font-style: italic;
 font-weight: 500;
 }
@@ -110,10 +110,10 @@ width: 50%;
 margin-bottom: 20px;
 }
 &__item:nth-child(5){
- margin-bottom: 0px;   
+ margin-bottom: 0px;
 }
 &__item:nth-child(6){
- margin-bottom: 0px;   
+ margin-bottom: 0px;
 }
 &__item p {
     margin:0 20px 0 15px;
@@ -122,19 +122,19 @@ margin-bottom: 20px;
 }
 &__btn{
     padding: 12px 45px;
-    background-color: grey;
+    background-color: var(--secondary-text-cl);
     color: white;
     font-family: 'Poppins';
     font-weight: 500;
     border-radius: 5px;
     &:hover,
     &:focus{
-    color: grey;
-    background-color: white;
-    border: 1px solid grey;
-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
--webkit-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
--moz-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+      color: grey;
+      background-color: var( --hover-text-cl);
+      border: 1px solid var(--secondary-text-cl);
+      box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+      -webkit-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
+      -moz-box-shadow: -2px -1px 49px -5px rgba(171,165,165,0.75);
 }
 }
 }

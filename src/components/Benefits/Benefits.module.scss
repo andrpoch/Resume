@@ -1,3 +1,4 @@
+@import "../../stylesheet/shared.scss";
 .benefits{
    padding-top: 140px;
    &__name{
@@ -6,7 +7,7 @@
    font-size: 20px;
    text-transform: uppercase;
    margin-bottom: 4px;
-   color: grey;
+   color: var(--secondary-text-cl);
    }
    &__title{
    font-family: 'Poppins';
@@ -32,7 +33,7 @@
    max-width: 250px;
    height:250px;
    padding: 60px 40px;
-   background-color: #F9F9F9;
+   background-color: var(--benefits-card-cl);
    box-shadow: 0 0 20px rgb(0 0 0 / 9%);
    transition: all 300ms ease;
    &:hover,

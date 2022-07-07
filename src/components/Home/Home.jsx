@@ -1,8 +1,8 @@
 import React from 'react';
 import Container from '../Container/Container';
-import Button from '../Button/Button'
 import s from './Home.module.scss';
 import img from '../../assets/images/meHomeImg.jpg';
+import Button from '../Button/Button';
 
 export default function Home() {
    return (
@@ -23,8 +23,8 @@ export default function Home() {
             <span> Full Stack developer</span>
             </span>
             </span>
-         </div>
-         <Button />
+            </div>
+            <Button path={'/about'} />
          </section>
    </Container>
    )

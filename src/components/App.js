@@ -1,29 +1,29 @@
-import React from 'react';
+import React, { lazy, Suspense } from "react";
 import { Route,Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './NavBar/NavBar';
-import HomePage from '../pages/HomePage';
-import AboutPage from '../pages/AboutPage';
-import BenefitsPage from '../pages/BenefitsPage';
-import PortfolioPage from '../pages/PortfolioPage';
-import ContactPage from '../pages/ContactPage';
-import { useMediaQuery } from 'react-responsive'
+import Loader from './Loader/Loader'
+
+const HomePage = lazy(() => import("../pages/HomePage"));
+const AboutPage = lazy(() => import("../pages/AboutPage"));
+const BenefitsPage = lazy(() => import("../pages/BenefitsPage"));
+const PortfolioPage = lazy(() => import("../pages/PortfolioPage"));
+const ContactPage = lazy(() => import("../pages/ContactPage"));
 
 export default function App() {
-const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1040px)' })
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1280px)' })
   return (
     <>
-      {isBigScreen && <Navbar />}
-      {isTabletOrMobile && <Navbar />}
+      <Navbar />
       <main>
+          <Suspense fallback={<Loader />}>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/benefits' element={<BenefitsPage />} />
           <Route path='/portfolio' element={<PortfolioPage />} />
           <Route path='/contact' element={<ContactPage />} />
-        </Routes>
+          </Routes>
+        </Suspense>
       </main>
     </>
   )

@@ -1,8 +1,9 @@
+@import "../../stylesheet/shared.scss";
 .home{
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 200px;
+padding: 200px 200px 0px 200px;
 &__image{
 width: 200px;
 height: 200px;
@@ -33,7 +34,7 @@ vertical-align: bottom;
 &__type > span {
 display:grid;
 overflow: hidden;
-color: rgb(82, 80, 80);
+color: var(--typewrite-text-cl);
 height:2.4em;
 }
 
@@ -62,8 +63,8 @@ display:inline-block;
 }
 
 @keyframes c{
-0%,100%{box-shadow:5px 0 0 #0000}
-50%    {box-shadow:5px 0 0 grey  }
+0%,100%{box-shadow:5px 0 0 var(--main-text-cl)}
+50%    {box-shadow:5px 0 0 var(--secondary-text-cl)  }
 }
 
 @keyframes m{

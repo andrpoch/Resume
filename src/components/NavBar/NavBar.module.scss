@@ -1,10 +1,11 @@
+@import "../../stylesheet/shared.scss";
 .header{
    width: 250px;
    position: fixed;
    top: 0;
    left: 0;
    bottom: 0;
-   background-color: grey;
+   background-color: var(--secondary-text-cl);
    padding: 60px;
    display: flex;
    flex-direction: column;
@@ -12,23 +13,10 @@
 }
 .nav{
    clear: both;
-}
-.linkLogo {
-   display:flex;
-   justify-content: space-around;
-   align-items: center;
-   margin-bottom: 50px;
-}
-.logoReact {
-   max-width: 80px;
-}
-.logo {
-   max-width: 200px;
-}
-   .link{
+   &__link{
    display: flex;
    align-items: center;
-   color: black;
+   color: var(--main-text-cl);
    padding: 15px 0;
    font-family: 'Poppins';
    font-weight: 500;
@@ -36,37 +24,70 @@
    line-height: 1.5;
    transition: all 350ms ease;
    border-bottom: 2px solid rgba(0, 0, 0, 0.071);
+   &_active{
+   display: flex;
+   align-items: center;
+   color: var(--main-text-cl);
+   padding: 15px 0;
+   font-family: 'Poppins';
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.5;
+   transition: all 350ms ease;
+   color: var(--hover-text-cl);
+   border-bottom: 2px solid rgba(254, 254, 254, 0.352);
+   & svg {
+      margin-left: 10px;
+      transition: transform 500ms ease;
+      }
+         &:last-child{
+   border: none;
+   }
+   }
+   & svg {
+      margin-left: 10px;
+      transition: transform 500ms ease;
+   }
+   &:focus svg,
+   &:hover svg {
+      transform: rotate(1turn);
+   }
+   &:last-child{
+   border: none;
+   }
+   &:hover:last-child,
+   &:focus:last-child{
+      border: none;
+   }
+   &:hover,
+   &:focus{
+      color: var(--hover-text-cl);
+      border-bottom: 2px solid rgba(254, 254, 254, 0.352);
+   }
 }
-.link svg {
-   margin-left: 10px;
-   transition: transform 500ms ease;
 }
-.link:focus svg,
-.link:hover svg {
-   transform: rotate(1turn);
+.link__logo {
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 50px;
+   &_react {
+      max-width: 80px;
+   }
+   &_name {
+      max-width: 200px;
+   }
 }
 
-.link:last-child{
-border: none;
-}
-.link:hover:last-child,
-.link:focus:last-child{
-   border: none;
-}
-.link:hover,
-.link:focus{
-   color: white;
-   border-bottom: 2px solid rgba(254, 254, 254, 0.352);
-}
-.socialList{
+.list{
    display: flex;
    justify-content: space-evenly;
-}
-.socialLink{
-   color: black;
-   transition: all 350ms ease;
-}
-.socialLink:hover,
-.socialLink:focus{
-   color: white;
+   &__link{
+      color: var(--main-text-cl);
+      transition: all 350ms ease;
+      &:hover,
+      &:focus{
+         color: var(--hover-text-cl);
+      }
+   }
 }

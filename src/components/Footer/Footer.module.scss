@@ -1,24 +1,25 @@
+@import "../../stylesheet/shared.scss";
 .footer{
-   margin-left: 370px;
-   display: flex;
-   justify-content: space-between;
-   background-color: black;
-   padding: 80px 20px;
-   &__text{
-   color: white;
-   font-family: "Poppins";
-   }
-   &__list{
-   display: flex;
-   justify-content: space-evenly;
-   }
-   &__link{
-   color: white;
-   transition: all 350ms ease;
-   margin-right: 40px;
-   &:hover,
-   &:focus{
-         color: grey;
-   }
-   }
+      margin-left: 370px;
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--main-text-cl);
+      padding: 80px 20px;
+&__text{
+      color: white;
+      font-family: "Poppins";
+}
+&__list{
+      display: flex;
+      justify-content: space-evenly;
+}
+&__link{
+      color: white;
+      transition: all 350ms ease;
+      margin-right: 40px;
+&:hover,
+&:focus{
+      color: var(--secondary-text-cl);
+}
+}
 }
