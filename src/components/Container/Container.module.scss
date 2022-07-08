@@ -1,4 +1,7 @@
+@import "../../stylesheet/shared.scss";
 .container{
-  margin-left: 370px;
   padding: 0px 20px;
+  @include mq(tablet) {
+    margin-left: 370px;
+  }
 }

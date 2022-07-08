@@ -1,21 +1,47 @@
 @import "../../stylesheet/shared.scss";
 .header{
-   display: none;
-   @include mq(tablet){
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      background-color: var(--secondary-text-cl);
-      padding: 60px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-   }
+   overflow:scroll;
+   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: var(--secondary-text-cl);
+  height: 85px;
+  @include mq(tablet) {
+  display: none;
+  }
+  &__logo{
+    margin-right: 5px;
+    margin-right: 10px;
+    @include mq(mobile){
+      margin-right: 20px;
+    }
+    &_name{
+      max-width: 100px;
+      @include mq(s-mobile){
+        max-width: 140px;
+      }
+      @include mq(mobile){
+        max-width: 180px;
+      }
+    }
+  }
+  &__background {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+   height: 100vw;
+   width: 100vw;
+    background: var(--secondary-text-cl);
+  }
+
 }
-.nav{
-   clear: both;
+
+
+.nav {
+   padding: 80px 30px;
+  clear: both;
    &__link{
    display: flex;
    align-items: center;
@@ -66,30 +92,6 @@
    &:focus{
       color: var(--hover-text-cl);
       border-bottom: 2px solid rgba(254, 254, 254, 0.352);
-      }
-   }
-}
-.link__logo {
-   display:flex;
-   justify-content: space-around;
-   align-items: center;
-   margin-bottom: 50px;
-   &_react {
-      max-width: 80px;
-   }
-   &_name {
-      max-width: 200px;
-   }
-}
-.list{
-   display: flex;
-   justify-content: space-evenly;
-   &__link{
-      color: var(--main-text-cl);
-      transition: all 350ms ease;
-      &:hover,
-      &:focus{
-         color: var(--hover-text-cl);
       }
    }
 }
