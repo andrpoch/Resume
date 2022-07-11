@@ -15,6 +15,8 @@ import myLogo from '../../assets/logo/myLogo.svg';
 import myLogoReact from '../../assets/logo/myLogoReact.svg';
 import s from './NavBar.module.scss';
 
+const setActive = ({ isActive }) => isActive ? s.nav__link_active : s.nav__link;
+
 export default function NavBar() {
    return (
       <header className={s.header}>
@@ -33,28 +35,23 @@ export default function NavBar() {
                <img src={myLogo} alt='my logo'  className={s.link__logo_name}
                />
             </NavLink>
-            <NavLink to='/' className={({ isActive }) =>
-              isActive ? s.nav__link_active : s.nav__link}>
+            <NavLink to='/' className={setActive}>
                Home
                <AiOutlineHome style={{ width: "25px", height: "25px" }} />
             </NavLink>
-            <NavLink to='/about' className={({ isActive }) =>
-              isActive ? s.nav__link_active : s.nav__link}>
+            <NavLink to='/about' className={setActive}>
                About
                <AiOutlineInfoCircle style={{ width: "25px", height: "25px" }} />
             </NavLink>
-            <NavLink to='/benefits' className={({ isActive }) =>
-              isActive ? s.nav__link_active : s.nav__link}    >
+            <NavLink to='/benefits' className={setActive}>
                Benefits
                <BsListStars style={{ width: "25px", height: "25px" }} />
             </NavLink>
-            <NavLink to='/portfolio' className={({ isActive }) =>
-              isActive ? s.nav__link_active : s.nav__link}  >
+            <NavLink to='/portfolio' className={setActive}>
                Portfolio
                <AiOutlineFolder style={{ width: "25px", height: "25px" }} />
             </NavLink>
-            <NavLink to='/contact' className={({ isActive }) =>
-              isActive ? s.nav__link_active : s.nav__link}
+            <NavLink to='/contact' className={setActive}
          >Contact
                <IoIosContact style={{ width: "25px", height: "25px" }} />
                </NavLink>

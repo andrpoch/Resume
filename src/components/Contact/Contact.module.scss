@@ -1,6 +1,15 @@
 @import "../../stylesheet/shared.scss";
 .contact{
+	padding: 35px 0px;
+   @include mq(mobile){
+	padding: 70px 0px;
+   }
+   @include mq(tablet){
+	padding: 105px 0px;
+   }
+   @include mq(desktop){
 	padding: 140px 0px;
+}
 &__title{
 	font-family: 'Poppins';
 	font-weight: 500;
@@ -24,14 +33,15 @@
 	letter-spacing: .5px;
 }
 	&__wrapper{
-	display: flex;
+	@include mq(mobile){
+		display: flex;
+   }
 	margin-top: 40px;
 	}
 	&__form {
 	margin-right: 50px;
 	width:520px;
 	height:auto;
-	overflow:hidden;
 	background:var(--hover-text-cl);
 	&_input {
 	font-family: mulish;
@@ -60,10 +70,10 @@
 	&_textarea[type='message']:hover {
 		border-color:var(--secondary-text-cl);
 	}
-	
 	&_textarea {
 	font-family: mulish;
-	width: 494px;
+	// width: 494px;
+	min-width: 100%;
 	margin:15px 0;
 	padding:15px 10px;
 	outline:none;
