@@ -1,13 +1,25 @@
 @import "../../stylesheet/shared.scss";
 .footer{
-      margin-left: 370px;
-      display: flex;
-      justify-content: space-between;
       background-color: var(--main-text-cl);
       padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include mq(mobile){
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+      }
+      @include mq(tablet) {
+      margin-left: 370px;
+      }
 &__text{
       color: white;
       font-family: "Poppins";
+      margin-bottom: 50px;
+      @include mq(mobile){
+            margin-bottom: 0px;
+}
 }
 &__list{
       display: flex;
